@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>ErgaOmnes</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>3phjf8c2bcezm</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">All devices</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="743315681759334">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="922877630096637">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="699051737484200">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="720528674634452">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="586739394912516" speed="5">
+                    <frame duration="1" hotspotX="0.474599" hotspotY="0.469325" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_000.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.700534" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.9591" />
+                            <point x="0" y="0.96728" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.458667" hotspotY="0.470226" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_001.png" />
+                    <frame duration="1" hotspotX="0.448187" hotspotY="0.470588" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_002.png" />
+                    <frame duration="1" hotspotX="0.440657" hotspotY="0.470466" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_003.png" />
+                    <frame duration="1" hotspotX="0.434944" hotspotY="0.468394" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_004.png" />
+                    <frame duration="1" hotspotX="0.43154" hotspotY="0.466321" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_005.png" />
+                    <frame duration="1" hotspotX="0.434944" hotspotY="0.468394" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_006.png" />
+                    <frame duration="1" hotspotX="0.440657" hotspotY="0.470466" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_007.png" />
+                    <frame duration="1" hotspotX="0.448187" hotspotY="0.470588" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_008.png" />
+                    <frame duration="1" hotspotX="0.458667" hotspotY="0.470226" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__WALK_009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="976312146071798" speed="5">
+                    <frame duration="1" hotspotX="0.437179" hotspotY="0.473196" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_000.png" />
+                    <frame duration="1" hotspotX="0.443445" hotspotY="0.472107" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_001.png" />
+                    <frame duration="1" hotspotX="0.449612" hotspotY="0.470466" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_002.png" />
+                    <frame duration="1" hotspotX="0.456437" hotspotY="0.468815" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_003.png" />
+                    <frame duration="1" hotspotX="0.463351" hotspotY="0.467153" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_004.png" />
+                    <frame duration="1" hotspotX="0.46912" hotspotY="0.465481" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_005.png" />
+                    <frame duration="1" hotspotX="0.463351" hotspotY="0.467153" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_006.png" />
+                    <frame duration="1" hotspotX="0.456437" hotspotY="0.468815" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_007.png" />
+                    <frame duration="1" hotspotX="0.449612" hotspotY="0.470466" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_008.png" />
+                    <frame duration="1" hotspotX="0.443445" hotspotY="0.472107" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__IDLE_009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="Atack" pingpong="0" repeatcount="1" repeatto="0" sid="630680898252300" speed="5">
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.465357" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_000.png" />
+                    <frame duration="1" hotspotX="0.506812" hotspotY="0.460733" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.454352" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_002.png" />
+                    <frame duration="1" hotspotX="0.520685" hotspotY="0.459516" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_003.png" />
+                    <frame duration="1" hotspotX="0.607204" hotspotY="0.464025" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_004.png" />
+                    <frame duration="1" hotspotX="0.456615" hotspotY="0.475207" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_005.png" />
+                    <frame duration="1" hotspotX="0.404858" hotspotY="0.482088" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_006.png" />
+                    <frame duration="1" hotspotX="0.418099" hotspotY="0.482653" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_007.png" />
+                    <frame duration="1" hotspotX="0.432681" hotspotY="0.480573" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_008.png" />
+                    <frame duration="1" hotspotX="0.4202" hotspotY="0.473792" original-source="E:\Downloads\Sprite Jogo\_PNG\1\Warrior_01__ATTACK_009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="WalkAtack" pingpong="0" repeatcount="1" repeatto="0" sid="633396013709888" speed="5">
+                    <frame duration="1" hotspotX="0.49169" hotspotY="0.469325" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_000.png">
+                        <collision-poly>
+                            <point x="0.101108" y="0.58998" />
+                            <point x="0.49169" y="0.0756646" />
+                            <point x="0.952909" y="0.537832" />
+                            <point x="0.980609" y="0.421268" />
+                            <point x="0.49169" y="0.986708" />
+                            <point x="0.0775623" y="0.366053" />
+                            <point x="0.0457064" y="0.469325" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.484507" hotspotY="0.470226" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_001.png" />
+                    <frame duration="1" hotspotX="0.473324" hotspotY="0.470588" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_002.png" />
+                    <frame duration="1" hotspotX="0.478082" hotspotY="0.470466" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_003.png" />
+                    <frame duration="1" hotspotX="0.609375" hotspotY="0.468394" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_004.png" />
+                    <frame duration="1" hotspotX="0.473826" hotspotY="0.466321" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_005.png" />
+                    <frame duration="1" hotspotX="0.464286" hotspotY="0.468394" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_006.png" />
+                    <frame duration="1" hotspotX="0.417464" hotspotY="0.470466" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_007.png" />
+                    <frame duration="1" hotspotX="0.413876" hotspotY="0.470588" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_008.png" />
+                    <frame duration="1" hotspotX="0.423645" hotspotY="0.470226" original-source="E:\Downloads\Sprite Jogo\Dovia\_PNG\Walk&amp;Atack\Warrior_01__WALK_009.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="201639232193319">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground" sid="244466191792957">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Downloads\Sprite Jogo\craftpix-891165-free-winter-holiday-game-backgrounds\PNG\BG_04\BG_04_edited.png" />
+        </object-type>
+        <object-type name="Wolf" sid="630888885182874">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="action" sid="145860554902281" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="268916783751596">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="950548641450633">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="258418718818362" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\walk.png">
+                        <collision-poly>
+                            <point x="0.204301" y="0.192308" />
+                            <point x="0.784946" y="0.0576923" />
+                            <point x="1" y="0.25" />
+                            <point x="0.849462" y="0.365385" />
+                            <point x="0.784946" y="0.903846" />
+                            <point x="0.537634" y="0.942308" />
+                            <point x="0.172043" y="0.942308" />
+                            <point x="0.11828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.510638">
+                        <collision-poly>
+                            <point x="0.204301" y="0.192308" />
+                            <point x="0.784946" y="0.0576923" />
+                            <point x="1" y="0.25" />
+                            <point x="0.849462" y="0.365385" />
+                            <point x="0.784946" y="0.903846" />
+                            <point x="0.537634" y="0.942308" />
+                            <point x="0.172043" y="0.942308" />
+                            <point x="0.11828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\walk.png">
+                        <collision-poly>
+                            <point x="0.204301" y="0.192308" />
+                            <point x="0.784946" y="0.0576923" />
+                            <point x="1" y="0.25" />
+                            <point x="0.849462" y="0.365385" />
+                            <point x="0.784946" y="0.903846" />
+                            <point x="0.537634" y="0.942308" />
+                            <point x="0.172043" y="0.942308" />
+                            <point x="0.11828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.510204" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\walk.png">
+                        <collision-poly>
+                            <point x="0.204301" y="0.192308" />
+                            <point x="0.784946" y="0.0576923" />
+                            <point x="1" y="0.25" />
+                            <point x="0.849462" y="0.365385" />
+                            <point x="0.784946" y="0.903846" />
+                            <point x="0.537634" y="0.942308" />
+                            <point x="0.172043" y="0.942308" />
+                            <point x="0.11828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.509434" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\walk.png">
+                        <collision-poly>
+                            <point x="0.204301" y="0.192308" />
+                            <point x="0.784946" y="0.0576923" />
+                            <point x="1" y="0.25" />
+                            <point x="0.849462" y="0.365385" />
+                            <point x="0.784946" y="0.903846" />
+                            <point x="0.537634" y="0.942308" />
+                            <point x="0.172043" y="0.942308" />
+                            <point x="0.11828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.509434" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\walk.png">
+                        <collision-poly>
+                            <point x="0.204301" y="0.192308" />
+                            <point x="0.784946" y="0.0576923" />
+                            <point x="1" y="0.25" />
+                            <point x="0.849462" y="0.365385" />
+                            <point x="0.784946" y="0.903846" />
+                            <point x="0.537634" y="0.942308" />
+                            <point x="0.172043" y="0.942308" />
+                            <point x="0.11828" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Blocker" sid="254961851903795">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870181007658148" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Vida" sid="959747897545826">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Life" pingpong="0" repeatcount="1" repeatto="0" sid="653567766407127" speed="0">
+                    <frame duration="1" hotspotX="0.500643" hotspotY="0.502825" />
+                    <frame duration="1" hotspotX="0.500643" hotspotY="0.502825" />
+                    <frame duration="1" hotspotX="0.500643" hotspotY="0.502825" original-source="E:\Downloads\Sprite Jogo\kindpng_1207637.png" />
+                    <frame duration="1" hotspotX="0.500643" hotspotY="0.502825" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VerticalSine" sid="900968526224052">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="201478750463975">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="208548328793293">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682054141748248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_33.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.960938" y="0.960938" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0390625" y="0.960938" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GroundSnow" sid="126088889985495">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="298763888591305">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_54.png" />
+        </object-type>
+        <object-type name="Ground" sid="146570671208709">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_75.png" />
+        </object-type>
+        <object-type name="Void" sid="551620049196626">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222378514791426" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Plataform" sid="890881819922218">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="846256905026448">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="113708182337947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_33.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.960938" y="0.960938" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0390625" y="0.960938" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bear" sid="601981433844854">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="action" sid="720455588603087" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="269856099065363">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="596314297307325">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="860444373829782" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.418182" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="1" y="0.174126" />
+                            <point x="1" y="0.0395105" />
+                            <point x="1" y="0.231818" />
+                            <point x="1" y="0.347203" />
+                            <point x="1" y="0.885664" />
+                            <point x="1" y="0.924126" />
+                            <point x="1" y="0.924126" />
+                            <point x="0.746212" y="0.443356" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.475" hotspotY="0.403846" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.237365" y="0.12648" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.1875" />
+                            <point x="1" y="0.309542" />
+                            <point x="1" y="0.879068" />
+                            <point x="1" y="0.919749" />
+                            <point x="0.0321236" y="0.919749" />
+                            <point x="0" y="0.411242" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493671" hotspotY="0.425926" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0" y="0.158832" />
+                            <point x="1" y="0.0217236" />
+                            <point x="1" y="0.217593" />
+                            <point x="1" y="0.335114" />
+                            <point x="1" y="0.883547" />
+                            <point x="1" y="0.922721" />
+                            <point x="0" y="0.922721" />
+                            <point x="0" y="0.433048" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.47561" hotspotY="0.415094" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0" y="0.142961" />
+                            <point x="1" y="0.0032656" />
+                            <point x="1" y="0.20283" />
+                            <point x="1" y="0.322569" />
+                            <point x="1" y="0.88135" />
+                            <point x="0.239704" y="0.921263" />
+                            <point x="0" y="0.921263" />
+                            <point x="0" y="0.422351" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.403846" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0" y="0.12648" />
+                            <point x="0.696875" y="0" />
+                            <point x="1" y="0.1875" />
+                            <point x="1" y="0.309542" />
+                            <point x="0.696875" y="0.879068" />
+                            <point x="0" y="0.919749" />
+                            <point x="0" y="0.919749" />
+                            <point x="0" y="0.411242" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.443038" hotspotY="0.415094" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0" y="0.142961" />
+                            <point x="0" y="0.0032656" />
+                            <point x="0.987342" y="0.20283" />
+                            <point x="0.0174194" y="0.322569" />
+                            <point x="0" y="0.88135" />
+                            <point x="0" y="0.921263" />
+                            <point x="0" y="0.921263" />
+                            <point x="0" y="0.422351" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HorizontalSine" sid="312112987933272">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="809624098255541">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="592700844074052">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732062333271132" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_33.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.960938" y="0.960938" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0390625" y="0.960938" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fox" sid="343143913135534">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="action" sid="210083821980948" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="435177173448083">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="883836235622431">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="388828112413168" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.6" />
+                    <frame duration="1" hotspotX="0.477273" hotspotY="0.625" />
+                    <frame duration="1" hotspotX="0.477273" hotspotY="0.612903" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="20" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
