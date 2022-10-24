@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="cronometro" sid="313079257352750" static="0" type="number">60</variable>
         <variable constant="0" name="BearLife" sid="259364761025101" static="0" type="number">4</variable>
         <variable constant="0" name="Lifes" sid="807298187340984" static="0" type="number">3</variable>
         <comment>Use the down arrow to allow the player to deliberately drop down through a jump-thru platform.</comment>
@@ -221,11 +222,11 @@
             </actions>
         </event-block>
         <comment>If the player falls off the bottom of the layout, restart the level.</comment>
-        <event-block sid="294040502103499">
+        <event-block any="1" sid="294040502103499">
             <conditions>
                 <condition id="-2" name="Compare Y" sid="641547643530284" type="Player">
                     <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight+240</param>
                 </condition>
             </conditions>
             <actions>
@@ -749,6 +750,58 @@
                         <action id="-11" name="Subtract from" sid="595154809088122" type="System">
                             <param id="0" name="Variable">Lifes</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="543126105877563">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="465469686082084" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="815225897666035" type="System">
+                    <param id="0" name="Variable">Lifes</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="965289947688117" type="Player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="472488910177877">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="921668702719604" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="862011405551700" type="System">
+                    <param id="0" name="Variable">cronometro</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="809350328852475" type="TxtCronometro">
+                    <param id="0" name="Text">cronometro</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="235737427218735">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="554073675068824" type="System">
+                            <param id="0" name="Variable">cronometro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="296081659499167" type="System" />
+                        <action id="-9" name="Set value" sid="428717744348315" type="System">
+                            <param id="0" name="Variable">cronometro</param>
+                            <param id="1" name="Value">60</param>
                         </action>
                     </actions>
                 </event-block>

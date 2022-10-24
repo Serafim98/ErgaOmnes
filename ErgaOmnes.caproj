@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -452,6 +453,81 @@
                     <frame duration="1" hotspotX="0.477273" hotspotY="0.612903" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="489091020799381">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="899443746732357">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302727678201863" speed="5">
+                    <frame duration="1" hotspotX="0.502358" hotspotY="0.43299" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\baixados.png">
+                        <collision-poly>
+                            <point x="0.127358" y="0.649485" />
+                            <point x="0.523585" y="0.57732" />
+                            <point x="0.955189" y="0.134021" />
+                            <point x="0.985849" y="0.43299" />
+                            <point x="0.915094" y="0.556701" />
+                            <point x="0.5" y="0.907216" />
+                            <point x="0.0188679" y="0.85567" />
+                            <point x="0.0400943" y="0.57732" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VerticalSine2" sid="811886099361840">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="592054197511739">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="585371776129461">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="506199215195238">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481573761831134" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_33.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.960938" y="0.960938" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0390625" y="0.960938" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="657546414891605">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597612304837670" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\NicePng_spike-spiegel-png_2287658.png">
+                        <collision-poly>
+                            <point x="0.186747" y="0.168605" />
+                            <point x="0.493976" y="0.104651" />
+                            <point x="0.816265" y="0.174418" />
+                            <point x="0.906627" y="0.494186" />
+                            <point x="0.996988" y="0.994186" />
+                            <point x="0.00301205" y="0.988372" />
+                            <point x="0.0933735" y="0.494186" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TxtCronometro" sid="681338978369413">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
