@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Pontos" sid="583404199495634" static="0" type="number">0</variable>
         <variable constant="0" name="cronometro" sid="313079257352750" static="0" type="number">60</variable>
         <variable constant="0" name="BearLife" sid="259364761025101" static="0" type="number">4</variable>
         <variable constant="0" name="Lifes" sid="807298187340984" static="0" type="number">3</variable>
@@ -231,6 +232,14 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="876051348352523" type="System" />
+                <action id="-9" name="Set value" sid="759388424263829" type="System">
+                    <param id="0" name="Variable">cronometro</param>
+                    <param id="1" name="Value">60</param>
+                </action>
+                <action id="-9" name="Set value" sid="606598160276319" type="System">
+                    <param id="0" name="Variable">Lifes</param>
+                    <param id="1" name="Value">3</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="764653505509300">
@@ -400,11 +409,13 @@
         </event-block>
         <event-block sid="286587137015529">
             <conditions>
-                <condition id="-1" name="Every tick" sid="389510758043094" type="System" />
+                <condition id="-6" name="Every X seconds" sid="389510758043094" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="387522215682870" type="Vida">
-                    <param id="0" name="Frame number">Lifes</param>
+                    <param id="0" name="Frame number">Lifes-1</param>
                 </action>
             </actions>
         </event-block>
@@ -412,7 +423,7 @@
             <conditions>
                 <condition id="-14" name="Compare variable" sid="669571867322564" type="System">
                     <param id="0" name="Variable">Lifes</param>
-                    <param id="1" name="Comparison">2</param>
+                    <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
@@ -421,10 +432,7 @@
                     <param id="0" name="Variable">Lifes</param>
                     <param id="1" name="Value">3</param>
                 </action>
-                <action id="-3" name="Set position" sid="680389173614625" type="Player">
-                    <param id="0" name="X">48</param>
-                    <param id="1" name="Y">480</param>
-                </action>
+                <action id="-26" name="Restart layout" sid="226837274040063" type="System" />
             </actions>
         </event-block>
         <event-block any="1" sid="685242152524205">
@@ -457,6 +465,12 @@
                             <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="-9" name="Destroy" sid="841554636806006" type="Wolf" />
+                        <action id="-3" name="Create object" sid="362184349560428" type="System">
+                            <param id="0" name="Object to create">Orbe</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">wolf.X</param>
+                            <param id="3" name="Y">wolf.Y+10</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="425405483976430">
@@ -478,6 +492,12 @@
                             <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="-9" name="Destroy" sid="657880470584046" type="Fox" />
+                        <action id="-3" name="Create object" sid="367099416483693" type="System">
+                            <param id="0" name="Object to create">Orbe</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Fox.X</param>
+                            <param id="3" name="Y">Fox.Y+10</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="316306243314320">
@@ -517,6 +537,12 @@
                             <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="-9" name="Destroy" sid="964392350782540" type="Bear" />
+                        <action id="-3" name="Create object" sid="201329450090902" type="System">
+                            <param id="0" name="Object to create">Orbe</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Bear.X</param>
+                            <param id="3" name="Y">Bear.Y+45</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -758,7 +784,7 @@
         <event-block sid="543126105877563">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="465469686082084" type="Player">
-                    <param id="0" name="Object">Sprite2</param>
+                    <param id="0" name="Object">Spike</param>
                 </condition>
             </conditions>
             <actions>
@@ -803,9 +829,85 @@
                             <param id="0" name="Variable">cronometro</param>
                             <param id="1" name="Value">60</param>
                         </action>
+                        <action id="-9" name="Set value" sid="284786683379149" type="System">
+                            <param id="0" name="Variable">Lifes</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="980386494727495">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="515151266324436" type="Player">
+                    <param id="0" name="Object">Orbe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="383140399187801" type="Orbe" />
+                <action id="-10" name="Add to" sid="313657006717888" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="506927373771550" type="TxtPontuacao">
+                    <param id="0" name="Text">Pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="240062823678537">
+            <conditions>
+                <condition id="2" name="Key is down" sid="553876574615379" type="Keyboard">
+                    <param id="0" name="Key">16 (Shift)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="549930126978412" type="Player">
+                    <param id="0" name="Max Speed">300</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="782986691673050">
+            <conditions>
+                <condition id="3" name="On key released" sid="392505978279489" type="Keyboard">
+                    <param id="0" name="Key">16 (Shift)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="246462103120895" type="Player">
+                    <param id="0" name="Max Speed">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="512415056137381">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="172644244174262" type="Player">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">SpikeFall.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="386745192183205" type="SpikeFall">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="601551197687418">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="894098518605445" type="Player">
+                    <param id="0" name="Object">SpikeFall</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="781059382582849" type="System">
+                    <param id="0" name="Variable">Lifes</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="566209892733552" type="Player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

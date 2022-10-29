@@ -17,6 +17,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -454,7 +455,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="489091020799381">
+        <object-type name="Bridge" sid="489091020799381">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="899443746732357">
@@ -508,7 +509,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="657546414891605">
+        <object-type name="Spike" sid="657546414891605">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597612304837670" speed="5">
@@ -528,6 +529,57 @@
         </object-type>
         <object-type name="TxtCronometro" sid="681338978369413">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Orbe" sid="195926516270411">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812103870583547" speed="5">
+                    <frame duration="1" hotspotX="0.595745" hotspotY="0.458244" original-source="E:\Downloads\Sprite Jogo\orbe.png">
+                        <collision-poly>
+                            <point x="0.123862" y="0.0746468" />
+                            <point x="0.594613" y="0" />
+                            <point x="0.933504" y="0.200052" />
+                            <point x="0.996353" y="0.456668" />
+                            <point x="0.917484" y="0.69935" />
+                            <point x="0.594613" y="0.917648" />
+                            <point x="0.147276" y="0.817789" />
+                            <point x="0" y="0.456668" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TxtPontuacao" sid="715698895105970">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="665174232469250">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SpikeFall" sid="686961657351680">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="825995702461823">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="984467016944845">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791869164943132" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\NicePng_spike-spiegel-png_2287658.png">
+                        <collision-poly>
+                            <point x="0.186747" y="0.168605" />
+                            <point x="0.493976" y="0.104651" />
+                            <point x="0.816265" y="0.174418" />
+                            <point x="0.906627" y="0.494186" />
+                            <point x="0.996988" y="0.994186" />
+                            <point x="0.00301205" y="0.988372" />
+                            <point x="0.0933735" y="0.494186" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
