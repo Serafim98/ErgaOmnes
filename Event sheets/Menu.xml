@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu</name>
+    <events>
+        <event-block sid="314086919346817">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="441122545998964" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BotaoIniciar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="982221039943011" type="System">
+                    <param id="0" name="Layout">&quot;Fase1&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="928608229687564" type="Audio">
+                    <param id="0" name="Audio file">click1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

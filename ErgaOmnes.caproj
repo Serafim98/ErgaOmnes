@@ -10,7 +10,9 @@
     <unique-id>3phjf8c2bcezm</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -34,6 +36,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -334,74 +337,74 @@
                 <animation framecount="6" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="860444373829782" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.418182" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
                         <collision-poly>
-                            <point x="1" y="0.174126" />
-                            <point x="1" y="0.0395105" />
-                            <point x="1" y="0.231818" />
-                            <point x="1" y="0.347203" />
-                            <point x="1" y="0.885664" />
-                            <point x="1" y="0.924126" />
-                            <point x="1" y="0.924126" />
-                            <point x="0.746212" y="0.443356" />
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.967949" y="0.285839" />
+                            <point x="0.964744" y="0.583392" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0929488" y="0.941083" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.475" hotspotY="0.403846" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
                         <collision-poly>
-                            <point x="0.237365" y="0.12648" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.1875" />
-                            <point x="1" y="0.309542" />
-                            <point x="1" y="0.879068" />
-                            <point x="1" y="0.919749" />
-                            <point x="0.0321236" y="0.919749" />
-                            <point x="0" y="0.411242" />
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.493671" hotspotY="0.425926" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
                         <collision-poly>
-                            <point x="0" y="0.158832" />
-                            <point x="1" y="0.0217236" />
-                            <point x="1" y="0.217593" />
-                            <point x="1" y="0.335114" />
-                            <point x="1" y="0.883547" />
-                            <point x="1" y="0.922721" />
-                            <point x="0" y="0.922721" />
-                            <point x="0" y="0.433048" />
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.47561" hotspotY="0.415094" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
                         <collision-poly>
-                            <point x="0" y="0.142961" />
-                            <point x="1" y="0.0032656" />
-                            <point x="1" y="0.20283" />
-                            <point x="1" y="0.322569" />
-                            <point x="1" y="0.88135" />
-                            <point x="0.239704" y="0.921263" />
-                            <point x="0" y="0.921263" />
-                            <point x="0" y="0.422351" />
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.47619" hotspotY="0.403846" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
                         <collision-poly>
-                            <point x="0" y="0.12648" />
-                            <point x="0.696875" y="0" />
-                            <point x="1" y="0.1875" />
-                            <point x="1" y="0.309542" />
-                            <point x="0.696875" y="0.879068" />
-                            <point x="0" y="0.919749" />
-                            <point x="0" y="0.919749" />
-                            <point x="0" y="0.411242" />
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.443038" hotspotY="0.415094" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
                         <collision-poly>
-                            <point x="0" y="0.142961" />
-                            <point x="0" y="0.0032656" />
-                            <point x="0.987342" y="0.20283" />
-                            <point x="0.0174194" y="0.322569" />
-                            <point x="0" y="0.88135" />
-                            <point x="0" y="0.921263" />
-                            <point x="0" y="0.921263" />
-                            <point x="0" y="0.422351" />
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -552,7 +555,7 @@
         <object-type name="TxtPontuacao" sid="715698895105970">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text" sid="665174232469250">
+        <object-type name="Pontos" sid="665174232469250">
             <plugin id="Text" />
         </object-type>
         <object-type name="SpikeFall" sid="686961657351680">
@@ -581,18 +584,215 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BotaoIniciar" sid="443943039744623">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="625435057002252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="E:\Downloads\Sprite Jogo\UIpack\PNG\red_button12.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Iniciar_Txt" sid="386372517611803">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="774332360545008">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Audio" sid="927030297195590">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite" sid="686266957943782">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300417196851174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.389815" original-source="E:\Downloads\Sprite Jogo\craftpix-891165-free-winter-holiday-game-backgrounds\PNG\BG_01\Layers\Sky.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="466312317905338">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="742988486566264">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655882185239235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50419" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\502-5020355_cave-entrance-png-cave-clipart-png-transparent-png.png">
+                        <collision-poly>
+                            <point x="0.997506" y="0.50419" />
+                            <point x="1" y="0.951117" />
+                            <point x="0.435162" y="0.949721" />
+                            <point x="0.629676" y="0.833799" />
+                            <point x="0.602244" y="0.532123" />
+                            <point x="0.532419" y="0.294693" />
+                            <point x="0.485037" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BearBoss" sid="452031677533177">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="action" sid="119760955483315" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="528048341562560">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="252120962231284">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="550609960075992">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="112058113809470" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.418182" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.967949" y="0.285839" />
+                            <point x="0.964744" y="0.583392" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0929488" y="0.941083" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.475" hotspotY="0.403846" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493671" hotspotY="0.425926" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.47561" hotspotY="0.415094" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.403846" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.443038" hotspotY="0.415094" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\Bear.png">
+                        <collision-poly>
+                            <point x="0.0352565" y="0.351399" />
+                            <point x="0.24359" y="0.084965" />
+                            <point x="0.637821" y="0.0909089" />
+                            <point x="0.964744" y="0.365385" />
+                            <point x="1" y="0.567482" />
+                            <point x="0.727564" y="0.605945" />
+                            <point x="0.753205" y="0.942308" />
+                            <point x="0.0288462" y="0.943356" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BearLife" sid="915336015235752">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="660753967395555">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="897342211848610">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529199194894844" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Downloads\Sprite Jogo\Floresta Gélida\2D Platformer Snow Pack (Tio Aimar)\PNG\snow_35.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.960938" y="0.960938" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0390625" y="0.960938" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>Fase1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Fase1.xml</event-sheet>
+        <event-sheet>Menu.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Mouse" uid="80" />
+        <global-instance type="Audio" uid="82">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="click1.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
