@@ -2424,8 +2424,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7536</x>
-                        <y>464</y>
+                        <x>48</x>
+                        <y>448</y>
                         <z>0</z>
                         <width>64.164733887</width>
                         <height>79.79460144</height>
@@ -2709,7 +2709,7 @@
                 </instance>
                 <instance type="TxtCronometro" uid="69">
                     <properties>
-                        <text>60</text>
+                        <text>240</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Impact,-48,400,0</font>
                         <color>255,255,51</color>

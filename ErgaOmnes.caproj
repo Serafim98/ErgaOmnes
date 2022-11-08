@@ -762,6 +762,45 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="935321074755187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910974589265014" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502618" original-source="E:\Downloads\Sprite Jogo\teclado.png">
+                        <collision-poly>
+                            <point x="0.00213675" y="0.0052356" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00213675" y="0.994764" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="996453980030291">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522277309915911" speed="5">
+                    <frame duration="1" hotspotX="0.498672" hotspotY="0.489569" original-source="E:\Downloads\pngeggedited.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.475305" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.993096" y="0.489569" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.00477961" y="0.489569" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controles" sid="419402262039142">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="914983892959761">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

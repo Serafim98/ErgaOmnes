@@ -40,10 +40,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>675.963806152</x>
-                        <y>210.200088501</y>
+                        <y>220.031448364</y>
                         <z>0</z>
-                        <width>1362.708374023</width>
-                        <height>604.779418945</height>
+                        <width>1363</width>
+                        <height>630</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.389814824</hotspotY>
@@ -61,8 +61,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>705</x>
-                        <y>248</y>
+                        <x>640</x>
+                        <y>154</y>
                         <z>0</z>
                         <width>190</width>
                         <height>45</height>
@@ -88,11 +88,87 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>660</x>
-                        <y>227</y>
+                        <x>591.5</x>
+                        <y>133</y>
                         <z>0</z>
                         <width>97</width>
                         <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite5" uid="97">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>639.193847656</x>
+                        <y>390</y>
+                        <z>0</z>
+                        <width>607.192749023</width>
+                        <height>231.848953247</height>
+                        <depth>0</depth>
+                        <hotspotX>0.498672336</hotspotX>
+                        <hotspotY>0.489568859</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Controles" uid="98">
+                    <properties>
+                        <text>Controles</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Impact,-32,400,0</font>
+                        <color>0,102,189</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>570.5</x>
+                        <y>205</y>
+                        <z>0</z>
+                        <width>139</width>
+                        <height>56</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text" uid="99">
+                    <properties>
+                        <text>W - Pular | A - Mover para Esquerda | D - Mover para Direita | Shift - Correr | Espaço - Atacar</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Impact,-32,400,0</font>
+                        <color>0,102,189</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Character</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>451</y>
+                        <z>0</z>
+                        <width>1240</width>
+                        <height>234</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
